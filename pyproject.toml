@@ -13,8 +13,8 @@ build-backend = "setuptools.build_meta"
 # -------------------------------
 [project]
 name = "verl"
-# We'll mark the version as "dynamic" because it's read from the file "verl/version/version" 
-# (PEP 621 calls this "dynamic version"). 
+# We'll mark the version as "dynamic" because it's read from the file "verl/version/version"
+# (PEP 621 calls this "dynamic version").
 # The actual version is specified in the [tool.setuptools.dynamic] section below.
 dynamic = ["version", "dependencies", "optional-dependencies", "authors", "urls"]
 
@@ -110,4 +110,7 @@ verl = [
   "version/*",
   "trainer/config/*.yaml",
   "trainer/config/*/*.yaml",
+]
+recipe = [
+  "**/config/*.yaml"
 ]

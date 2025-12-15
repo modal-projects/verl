@@ -90,6 +90,7 @@ setup(
     extras_require=extras_require,
     package_data={
         "": ["version/*"],
+        "recipe": ["**/config/*.yaml"],
         "verl": ["trainer/config/*.yaml"],
     },
     include_package_data=True,
